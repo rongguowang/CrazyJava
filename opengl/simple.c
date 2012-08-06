@@ -15,7 +15,7 @@ void display()
   glFlush();
 }
 
-int main(char * argc, char ** argv)
+int main(int argc, char ** argv)
 {
   glutInit(&argc, argv);
   glutCreateWindow("simple");

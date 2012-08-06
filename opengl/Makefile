@@ -5,10 +5,11 @@ IFLAGS = -I
 LFLAGS = -L
 
 SRCDIR = ./
+BINDIR = ../bin/
 LIBS = -lglut
 
 .c:
-	$(CC)  $(CFLAGS) $@.c $(LIBS) $(OFLAGS) $@
+	$(CC)  $(CFLAGS) $@.c $(LIBS) $(OFLAGS) $(BINDIR)$@
 tags:
 	rm -rf $(SRCDIR)TAGS
 	find . -name *.c -print |xargs etags -o $(SRCDIR)TAGS
